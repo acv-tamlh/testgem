@@ -38,4 +38,19 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+    config.model Product do
+     edit do
+       field :title
+       field :description, :ck_editor
+       field :price
+       field :category
+     end
+   end
+   config.model Category do
+     edit do
+       field :title
+       field :description, :ck_editor
+       field :products
+     end
+   end
 end
