@@ -1,0 +1,18 @@
+= semantic_form_for @product do |f|
+  .field
+    = f.label :title
+    = f.input :title
+  .field
+    = f.label :description
+    = f.input :description
+  .field
+    = f.label :price
+    = f.input :price
+  .field
+    = f.label :image
+    = f.file_field :image
+  .field
+    = f.label :category_id
+    = f.input :category
+  .actions
+    = f.submit
